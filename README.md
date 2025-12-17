@@ -126,21 +126,19 @@ outliers, and distribution patterns before and after cleaning.
 
 
 
-\[!\[Missing Values Before Cleaning](outputs/visualizations/data\_profiling\_cleaning/01\_missing\_values\_before\_cleaning.png)](outputs/visualizations/data\_profiling\_cleaning/01\_missing\_values\_before\_cleaning.png)
+!\[Missing Values Before Cleaning](outputs/visualizations/data\_profiling\_cleaning/01\_missing\_values\_before\_cleaning.png)
 
 
 
-\[!\[Distributions Before Cleaning](outputs/visualizations/data\_profiling\_cleaning/02\_distributions\_before\_cleaning.png)](outputs/visualizations/data\_profiling\_cleaning/02\_distributions\_before\_cleaning.png)
+!\[Distributions Before Cleaning](outputs/visualizations/data\_profiling\_cleaning/02\_distributions\_before\_cleaning.png)
 
 
 
-\[!\[Outliers Before Cleaning](outputs/visualizations/data\_profiling\_cleaning/03\_outliers\_boxplots\_before\_cleaning.png)](outputs/visualizations/data\_profiling\_cleaning/03\_outliers\_boxplots\_before\_cleaning.png)
+!\[Outliers Before Cleaning](outputs/visualizations/data\_profiling\_cleaning/03\_outliers\_boxplots\_before\_cleaning.png)
 
 
 
-\[!\[Post Cleaning Boxplots](outputs/visualizations/data\_profiling\_cleaning/04\_post\_cleaning\_boxplots.png)](outputs/visualizations/data\_profiling\_cleaning/04\_post\_cleaning\_boxplots.png)
-
-
+!\[Post Cleaning Boxplots](outputs/visualizations/data\_profiling\_cleaning/04\_post\_cleaning\_boxplots.png)
 
 ---
 
@@ -154,11 +152,11 @@ and relationships between air quality and weather variables.
 
 
 
-\[!\[PM2.5 Trends \& Top Polluted Cities](outputs/visualizations/eda\_visualization/08\_pm25\_trend\_over\_time\_and\_top\_polluted\_cities.png)](outputs/visualizations/eda\_visualization/08\_pm25\_trend\_over\_time\_and\_top\_polluted\_cities.png)
+!\[PM2.5 Trend and Top Polluted Cities](outputs/visualizations/eda\_visualization/08\_pm25\_trend\_over\_time\_and\_top\_polluted\_cities.png)
 
 
 
-\[!\[Correlation Heatmap](outputs/visualizations/eda\_visualization/9\_correlation\_heatmap\_cleaned\_and\_engineered\_features.png)](outputs/visualizations/eda\_visualization/9\_correlation\_heatmap\_cleaned\_and\_engineered\_features.png)
+!\[Correlation Heatmap](outputs/visualizations/eda\_visualization/9\_correlation\_heatmap\_cleaned\_and\_engineered\_features.png)
 
 
 
