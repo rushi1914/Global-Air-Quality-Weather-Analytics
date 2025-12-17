@@ -1,144 +1,265 @@
-\# Global Air Quality \& Weather Data Unification
-
-
-
-\## Domain
-
-Environment / Smart Cities
-
-
-
-\## Difficulty Level
-
-High
+\# Global Air Quality \& Weather Data Analysis
 
 
 
 \## Project Overview
 
-This project focuses on unifying, cleaning, and analyzing multi-source air quality and weather data to support real-time analytics, forecasting, and decision-making for smart city applications.
+This project performs end-to-end analysis of global air quality and weather data.  
+
+The goal is to clean and unify the dataset, analyze pollution patterns, and build predictive models for PM2.5 levels.
 
 
 
-The workflow covers the complete data lifecycle — from raw data ingestion and profiling to advanced predictive modeling and association rule mining.
+The workflow covers:
+
+\- Data profiling and cleaning  
+
+\- Exploratory data analysis (EDA)  
+
+\- Feature engineering  
+
+\- Predictive modeling  
+
+\- Time-series forecasting  
+
+\- Association rule mining  
 
 
 
-\## Objective
-
-To integrate heterogeneous environmental datasets (air quality sensors, weather data, and geolocation metadata) into a clean, analysis-ready dataset that enables:
-
-\- Air Quality Index (AQI) analysis
-
-\- Trend visualization and dashboards
-
-\- PM2.5 forecasting
-
-\- Pattern discovery using association rules
+---
 
 
 
-\## Data Sources
+\## Dataset
 
-\- OpenAQ (air pollution data)
+The dataset contains air quality and weather measurements from multiple cities, including:
 
-\- Historical air quality datasets
+\- PM2.5, NO₂, O₃
 
-\- Weather station data
+\- Temperature, humidity, wind speed
 
-\- City-level geolocation metadata
-
-
-
-\## Project Workflow
-
-1\. Setup and Environment Configuration  
-
-2\. Data Ingestion  
-
-3\. Data Profiling and Exploratory Data Analysis  
-
-4\. Schema Alignment and Standardization  
-
-5\. Data Cleaning (Interpolation, IQR capping, validation)  
-
-6\. Data Validation and Integration  
-
-7\. Data Export and Documentation  
-
-8\. Data Dictionary Creation  
-
-9\. Export of Final Datasets  
-
-10\. Visual Insights and Static Dashboards  
-
-11\. Interactive Dashboard using Plotly  
-
-12\. Predictive Modeling using Regression Techniques  
-
-13\. Advanced Models: XGBoost and LightGBM  
-
-14\. Model Performance Comparison (R² Score)  
-
-15\. Time Series Forecasting for PM2.5  
-
-16\. Association Rule Mining using Apriori Algorithm  
+\- Timestamp and geographic coordinates
 
 
 
-\## Key Features
-
-\- AQI calculation based on US EPA standards
-
-\- Dynamic and interactive visual dashboards
-
-\- Multiple regression models for comparison
-
-\- Time-based PM2.5 forecasting
-
-\- Pattern discovery using Apriori algorithm
+All data is cleaned, validated, and standardized before analysis.
 
 
 
-\## Technologies Used
-
-\- Python
-
-\- Pandas, NumPy
-
-\- Matplotlib, Seaborn, Plotly
-
-\- Scikit-learn
-
-\- XGBoost, LightGBM
-
-\- MLxtend (Apriori Algorithm)
+---
 
 
 
-\## Outputs
+\## Project Structure
 
-\- air\_quality\_clean.csv  
 
-\- air\_quality\_transformed.csv  
+Global\_Air\_Quality\_Weather/
 
-\- aqi\_summary\_by\_city.csv  
+│
 
-\- Interactive visual dashboards  
+├── data/
 
-\- Trained predictive models  
+│ ├── air\_quality\_clean.csv
+
+│ ├── air\_quality\_transformed.csv
+
+│ ├── aqi\_summary\_by\_city.csv
+
+│ └── aqi\_category\_distribution.csv
+
+│
+
+├── notebooks/
+
+│ └── Global-Air-Quality-Weather-Data-Unification.ipynb
+
+│
+
+├── outputs/
+
+│ └── visualizations/
+
+│
+
+├── README.md
+
+└── requirements.txt
+
+
+
+---
+
+
+
+\## Data Profiling \& Cleaning
+
+
+
+Missing values, distributions, and outliers were analyzed before and after cleaning.
+
+
+
+!\[Missing Values Before Cleaning](outputs/visualizations/data\_profiling\_cleaning/01\_missing\_values\_before\_cleaning.png)
+
+
+
+!\[Distributions Before Cleaning](outputs/visualizations/data\_profiling\_cleaning/02\_distributions\_before\_cleaning.png)
+
+
+
+!\[Outliers Before Cleaning](outputs/visualizations/data\_profiling\_cleaning/03\_outliers\_boxplots\_before\_cleaning.png)
+
+
+
+!\[Post Cleaning Boxplots](outputs/visualizations/data\_profiling\_cleaning/04\_post\_cleaning\_boxplots.png)
+
+
+
+---
+
+
+
+\## Exploratory Data Analysis (EDA)
+
+
+
+Trends, correlations, and city-wise pollution analysis.
+
+
+
+!\[PM2.5 Trend and Top Cities](outputs/visualizations/eda\_visualization/08\_pm25\_trend\_over\_time\_and\_top\_polluted\_cities.png)
+
+
+
+!\[Correlation Heatmap](outputs/visualizations/eda\_visualization/9\_correlation\_heatmap\_cleaned\_and\_engineered\_features.png)
+
+
+
+---
+
+
+
+\## Interactive Visualization
+
+
+
+Dynamic PM2.5 vs Temperature visualization.
+
+
+
+!\[Interactive Plot](outputs/visualizations/interactive\_visualization/11\_interactive\_pm25\_vs\_temperature.png)
+
+
+
+---
+
+
+
+\## Regression Models
+
+
+
+Comparison of multiple regression techniques.
+
+
+
+!\[Simple Linear Regression](outputs/visualizations/regression\_models/12\_simple\_linear\_regression.png)
+
+
+
+!\[Multiple Linear Regression](outputs/visualizations/regression\_models/13\_multiple\_linear\_regressio.png)
+
+
+
+!\[Polynomial Regression](outputs/visualizations/regression\_models/14\_polynomial\_regression.png)
+
+
+
+!\[Ridge \& Lasso Regression](outputs/visualizations/regression\_models/15\_ridge\_lasso\_regression.png)
+
+
+
+---
+
+
+
+\## Advanced Machine Learning Models
+
+
+
+Performance comparison of tree-based models.
+
+
+
+!\[Random Forest](outputs/visualizations/advance\_ml\_models/16\_random\_forest\_actual\_vs\_predicted.png)
+
+
+
+!\[XGBoost \& LightGBM](outputs/visualizations/advance\_ml\_models/17\_xgboost\_lightgbm\_results.png)
+
+
+
+!\[R² Comparison](outputs/visualizations/advance\_ml\_models/18\_r2\_score\_comparison\_table.png)
+
+
+
+---
+
+
+
+\## Time Series Forecasting
+
+
+
+PM2.5 forecasting using lag features and temporal modeling.
+
+
+
+!\[Time Series Prediction](outputs/visualizations/time\_series\_forecasting/19\_time\_series\_actual\_vs\_predicted.png)
+
+
+
+!\[Residuals \& Feature Importance](outputs/visualizations/time\_series\_forecasting/20\_time\_series\_residuals\_and\_feature\_importance.png)
+
+
+
+---
+
+
+
+\## Association Rule Mining (Apriori)
+
+
+
+Identifying pollution-related patterns.
+
+
+
+!\[Frequent Itemsets](outputs/visualizations/association\_rule\_mining/21\_frequent\_itemsets.png)
+
+
+
+!\[Association Rules](outputs/visualizations/association\_rule\_mining/22\_association\_rules\_apriori.png)
+
+
+
+---
 
 
 
 \## Conclusion
 
-This project demonstrates an end-to-end data science pipeline for environmental analytics, combining data engineering, visualization, predictive modeling, and pattern mining to support smart city initiatives.
+
+
+This project demonstrates a complete real-world data analytics pipeline,
+
+from raw data to actionable insights, using statistical analysis,
+
+machine learning, and time-series forecasting techniques.
 
 
 
-\## Author
+## Author
 
-Rushikesh Kedar
-
-
+Rushikesh
 
