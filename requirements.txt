@@ -1,0 +1,19 @@
+pandas
+numpy
+matplotlib
+seaborn
+scikit-learn
+xgboost
+lightgbm
+plotly
+mlxtend
+ydata-profiling
+openpyxl
+
+[pandas, numpy → data handling
+matplotlib, seaborn, plotly → visualizations
+scikit-learn → regression, metrics
+xgboost, lightgbm → advanced ML models
+mlxtend → Apriori algorithm
+ydata-profiling → profiling report
+openpyxl → Excel file reading]
