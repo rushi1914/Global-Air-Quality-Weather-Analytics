@@ -1,28 +1,30 @@
-\# Global Air Quality \& Weather Data Analysis
+\# Global Air Quality \& Weather Analytics
 
 
 
 \## Project Overview
 
-This project performs end-to-end analysis of global air quality and weather data.  
+This project presents an end-to-end analysis of global air quality and weather data.
 
-The goal is to clean and unify the dataset, analyze pollution patterns, and build predictive models for PM2.5 levels.
+The objective is to clean, unify, analyze, and model pollution patterns, with a primary
+
+focus on \*\*PM2.5 concentration prediction\*\*.
 
 
 
-The workflow covers:
+The project demonstrates a complete data analytics pipeline, including:
 
-\- Data profiling and cleaning  
+\- Data profiling and cleaning
 
-\- Exploratory data analysis (EDA)  
+\- Exploratory Data Analysis (EDA)
 
-\- Feature engineering  
+\- Feature engineering
 
-\- Predictive modeling  
+\- Regression and machine learning models
 
-\- Time-series forecasting  
+\- Time-series forecasting
 
-\- Association rule mining  
+\- Association rule mining (Apriori)
 
 
 
@@ -30,19 +32,25 @@ The workflow covers:
 
 
 
-\## Dataset
+\## Dataset Description
 
-The dataset contains air quality and weather measurements from multiple cities, including:
-
-\- PM2.5, NO₂, O₃
-
-\- Temperature, humidity, wind speed
-
-\- Timestamp and geographic coordinates
+The dataset contains air quality and weather measurements collected across multiple cities.
 
 
 
-All data is cleaned, validated, and standardized before analysis.
+\*\*Key variables include:\*\*
+
+\- Air pollutants: PM2.5, NO₂, O₃
+
+\- Weather factors: temperature, humidity, wind speed
+
+\- Temporal data: timestamp
+
+\- Spatial data: latitude, longitude
+
+
+
+All datasets are cleaned, validated, and standardized before analysis.
 
 
 
@@ -51,6 +59,7 @@ All data is cleaned, validated, and standardized before analysis.
 
 
 \## Project Structure
+
 
 
 Global\_Air\_Quality\_Weather/
@@ -79,6 +88,20 @@ Global\_Air\_Quality\_Weather/
 
 │ └── visualizations/
 
+│ ├── data\_profiling\_cleaning/
+
+│ ├── eda\_visualization/
+
+│ ├── interactive\_visualization/
+
+│ ├── regression\_models/
+
+│ ├── advance\_ml\_models/
+
+│ ├── time\_series\_forecasting/
+
+│ └── association\_rule\_mining/
+
 │
 
 ├── README.md
@@ -93,25 +116,29 @@ Global\_Air\_Quality\_Weather/
 
 \## Data Profiling \& Cleaning
 
+Initial data quality checks were performed to identify missing values,
 
-
-Missing values, distributions, and outliers were analyzed before and after cleaning.
-
-
-
-!\[Missing Values Before Cleaning](outputs/visualizations/data\_profiling\_cleaning/01\_missing\_values\_before\_cleaning.png)
+outliers, and distribution patterns before and after cleaning.
 
 
 
-!\[Distributions Before Cleaning](outputs/visualizations/data\_profiling\_cleaning/02\_distributions\_before\_cleaning.png)
+\_Click any image to view in full resolution.\_
 
 
 
-!\[Outliers Before Cleaning](outputs/visualizations/data\_profiling\_cleaning/03\_outliers\_boxplots\_before\_cleaning.png)
+\[!\[Missing Values Before Cleaning](outputs/visualizations/data\_profiling\_cleaning/01\_missing\_values\_before\_cleaning.png)](outputs/visualizations/data\_profiling\_cleaning/01\_missing\_values\_before\_cleaning.png)
 
 
 
-!\[Post Cleaning Boxplots](outputs/visualizations/data\_profiling\_cleaning/04\_post\_cleaning\_boxplots.png)
+\[!\[Distributions Before Cleaning](outputs/visualizations/data\_profiling\_cleaning/02\_distributions\_before\_cleaning.png)](outputs/visualizations/data\_profiling\_cleaning/02\_distributions\_before\_cleaning.png)
+
+
+
+\[!\[Outliers Before Cleaning](outputs/visualizations/data\_profiling\_cleaning/03\_outliers\_boxplots\_before\_cleaning.png)](outputs/visualizations/data\_profiling\_cleaning/03\_outliers\_boxplots\_before\_cleaning.png)
+
+
+
+\[!\[Post Cleaning Boxplots](outputs/visualizations/data\_profiling\_cleaning/04\_post\_cleaning\_boxplots.png)](outputs/visualizations/data\_profiling\_cleaning/04\_post\_cleaning\_boxplots.png)
 
 
 
@@ -121,17 +148,17 @@ Missing values, distributions, and outliers were analyzed before and after clean
 
 \## Exploratory Data Analysis (EDA)
 
+EDA focuses on pollution trends over time, city-wise comparisons,
 
-
-Trends, correlations, and city-wise pollution analysis.
-
-
-
-!\[PM2.5 Trend and Top Cities](outputs/visualizations/eda\_visualization/08\_pm25\_trend\_over\_time\_and\_top\_polluted\_cities.png)
+and relationships between air quality and weather variables.
 
 
 
-!\[Correlation Heatmap](outputs/visualizations/eda\_visualization/9\_correlation\_heatmap\_cleaned\_and\_engineered\_features.png)
+\[!\[PM2.5 Trends \& Top Polluted Cities](outputs/visualizations/eda\_visualization/08\_pm25\_trend\_over\_time\_and\_top\_polluted\_cities.png)](outputs/visualizations/eda\_visualization/08\_pm25\_trend\_over\_time\_and\_top\_polluted\_cities.png)
+
+
+
+\[!\[Correlation Heatmap](outputs/visualizations/eda\_visualization/9\_correlation\_heatmap\_cleaned\_and\_engineered\_features.png)](outputs/visualizations/eda\_visualization/9\_correlation\_heatmap\_cleaned\_and\_engineered\_features.png)
 
 
 
@@ -141,13 +168,13 @@ Trends, correlations, and city-wise pollution analysis.
 
 \## Interactive Visualization
 
+An interactive visualization was built to explore the relationship
+
+between \*\*PM2.5 and temperature\*\* across different cities and AQI categories.
 
 
-Dynamic PM2.5 vs Temperature visualization.
 
-
-
-!\[Interactive Plot](outputs/visualizations/interactive\_visualization/11\_interactive\_pm25\_vs\_temperature.png)
+\[!\[Interactive PM2.5 vs Temperature](outputs/visualizations/interactive\_visualization/11\_interactive\_pm25\_vs\_temperature.png)](outputs/visualizations/interactive\_visualization/11\_interactive\_pm25\_vs\_temperature.png)
 
 
 
@@ -157,25 +184,25 @@ Dynamic PM2.5 vs Temperature visualization.
 
 \## Regression Models
 
+Multiple regression techniques were applied and compared to understand
 
-
-Comparison of multiple regression techniques.
-
-
-
-!\[Simple Linear Regression](outputs/visualizations/regression\_models/12\_simple\_linear\_regression.png)
+linear and non-linear relationships.
 
 
 
-!\[Multiple Linear Regression](outputs/visualizations/regression\_models/13\_multiple\_linear\_regressio.png)
+\[!\[Simple Linear Regression](outputs/visualizations/regression\_models/12\_simple\_linear\_regression.png)](outputs/visualizations/regression\_models/12\_simple\_linear\_regression.png)
 
 
 
-!\[Polynomial Regression](outputs/visualizations/regression\_models/14\_polynomial\_regression.png)
+\[!\[Multiple Linear Regression](outputs/visualizations/regression\_models/13\_multiple\_linear\_regressio.png)](outputs/visualizations/regression\_models/13\_multiple\_linear\_regressio.png)
 
 
 
-!\[Ridge \& Lasso Regression](outputs/visualizations/regression\_models/15\_ridge\_lasso\_regression.png)
+\[!\[Polynomial Regression](outputs/visualizations/regression\_models/14\_polynomial\_regression.png)](outputs/visualizations/regression\_models/14\_polynomial\_regression.png)
+
+
+
+\[!\[Ridge \& Lasso Regression](outputs/visualizations/regression\_models/15\_ridge\_lasso\_regression.png)](outputs/visualizations/regression\_models/15\_ridge\_lasso\_regression.png)
 
 
 
@@ -185,21 +212,19 @@ Comparison of multiple regression techniques.
 
 \## Advanced Machine Learning Models
 
-
-
-Performance comparison of tree-based models.
-
-
-
-!\[Random Forest](outputs/visualizations/advance\_ml\_models/16\_random\_forest\_actual\_vs\_predicted.png)
+Tree-based ensemble models were implemented for improved prediction accuracy.
 
 
 
-!\[XGBoost \& LightGBM](outputs/visualizations/advance\_ml\_models/17\_xgboost\_lightgbm\_results.png)
+\[!\[Random Forest Results](outputs/visualizations/advance\_ml\_models/16\_random\_forest\_actual\_vs\_predicted.png)](outputs/visualizations/advance\_ml\_models/16\_random\_forest\_actual\_vs\_predicted.png)
 
 
 
-!\[R² Comparison](outputs/visualizations/advance\_ml\_models/18\_r2\_score\_comparison\_table.png)
+\[!\[XGBoost \& LightGBM](outputs/visualizations/advance\_ml\_models/17\_xgboost\_lightgbm\_results.png)](outputs/visualizations/advance\_ml\_models/17\_xgboost\_lightgbm\_results.png)
+
+
+
+\[!\[R² Score Comparison](outputs/visualizations/advance\_ml\_models/18\_r2\_score\_comparison\_table.png)](outputs/visualizations/advance\_ml\_models/18\_r2\_score\_comparison\_table.png)
 
 
 
@@ -209,17 +234,15 @@ Performance comparison of tree-based models.
 
 \## Time Series Forecasting
 
-
-
-PM2.5 forecasting using lag features and temporal modeling.
-
-
-
-!\[Time Series Prediction](outputs/visualizations/time\_series\_forecasting/19\_time\_series\_actual\_vs\_predicted.png)
+Temporal models were used to forecast PM2.5 using lag features and time-based patterns.
 
 
 
-!\[Residuals \& Feature Importance](outputs/visualizations/time\_series\_forecasting/20\_time\_series\_residuals\_and\_feature\_importance.png)
+\[!\[Time Series Prediction](outputs/visualizations/time\_series\_forecasting/19\_time\_series\_actual\_vs\_predicted.png)](outputs/visualizations/time\_series\_forecasting/19\_time\_series\_actual\_vs\_predicted.png)
+
+
+
+\[!\[Residuals \& Feature Importance](outputs/visualizations/time\_series\_forecasting/20\_time\_series\_residuals\_and\_feature\_importance.png)](outputs/visualizations/time\_series\_forecasting/20\_time\_series\_residuals\_and\_feature\_importance.png)
 
 
 
@@ -229,17 +252,17 @@ PM2.5 forecasting using lag features and temporal modeling.
 
 \## Association Rule Mining (Apriori)
 
+Apriori algorithm was applied to discover frequent pollution patterns
 
-
-Identifying pollution-related patterns.
-
-
-
-!\[Frequent Itemsets](outputs/visualizations/association\_rule\_mining/21\_frequent\_itemsets.png)
+and relationships between environmental conditions.
 
 
 
-!\[Association Rules](outputs/visualizations/association\_rule\_mining/22\_association\_rules\_apriori.png)
+\[!\[Frequent Itemsets](outputs/visualizations/association\_rule\_mining/21\_frequent\_itemsets.png)](outputs/visualizations/association\_rule\_mining/21\_frequent\_itemsets.png)
+
+
+
+\[!\[Association Rules](outputs/visualizations/association\_rule\_mining/22\_association\_rules\_apriori.png)](outputs/visualizations/association\_rule\_mining/22\_association\_rules\_apriori.png)
 
 
 
@@ -249,17 +272,23 @@ Identifying pollution-related patterns.
 
 \## Conclusion
 
+This project showcases a complete real-world analytics workflow,
+
+combining data cleaning, visualization, machine learning,
+
+time-series forecasting, and pattern mining to extract
+
+meaningful insights from air quality data.
 
 
-This project demonstrates a complete real-world data analytics pipeline,
 
-from raw data to actionable insights, using statistical analysis,
-
-machine learning, and time-series forecasting techniques.
+---
 
 
 
-## Author
+\## Author
 
-Rushikesh
+\*\*Rushikesh Kedar\*\*
+
+
 
